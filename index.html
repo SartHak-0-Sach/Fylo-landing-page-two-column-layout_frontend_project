@@ -4,70 +4,130 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/fennetec (1).png">
   
-  <title>Frontend Mentor | Fylo landing page with two column layout</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Fennetec</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7c073a6778.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-  Features
-  Team
-  Sign In
-
-  All your files in one secure location, accessible anywhere.
-
-  Fylo stores your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
-  family, and co-workers.
-
-  Get Started
-
-  Stay productive, wherever you are
-
-  Never let location be an issue when accessing your files. Fylo has you 
-  covered for all of your file storage needs.
-
-  Securely share files and folders with friends, family and colleagues for 
-  live collaboration. No email attachments required!
-
-  See how Fylo works
-
-  Fylo has improved our team productivity by an order of magnitude. Since 
-  making the switch our team has become a well-oiled collaboration machine.
-
-  Kyle Burton
-  Founder & CEO, Huddle
-
-  Get early access today
-
-  It only takes a minute to sign up and our free starter tier is extremely generous. 
-  If you have any questions, our support team would be happy to help you.
-
-  Get Started For Free
-
-  Phone: +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
-
+  <header>
+    <div class="logo">
+      <a href="#">
+      <img id="logo" src="images/logo_horiz_black.png" alt="logo">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="#features">À propos</a>
+        </li>
+        <li>
+          <a href="#team">Notre expertise</a>
+        </li>
+        <li>
+          <a href="#sign-in">Équipe</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+  <div class="main">
+    <!-- features section -->
+    <div class="illustration illust--1">
+      <img class="illust--1" src="images/fennetec.svg" alt="illust 1">
+    </div>
+    <section class="features" id="features">
+      <div class="desc">
+        <h1>Fennetec, Votre Partenaire En Solutions Numériques Sur Mesure</h1>
+        <p>Spécialisés dans la conception et le développement de sites web et applications mobiles sur mesure.</p>
+        <p>Notre objectif est de vous aider à atteindre vos objectifs commerciaux en vous offrant des solutions innovantes et performantes. Travaillons ensemble pour réaliser votre vision</p>
+        <div class="form form1" id="form1">
+          <input id="features-input" type="email" placeholder="Entrer votre email...">
+          <p class="error-message" id="features-error-message">Please check your email</p>
+          <button onclick="getStarted()">Envoyer moi les nouveaux</button>
+        </div>
+      </div>
+    </section>
+    <!-- Team section -->
+    <div class="illustration illust--2">
+      <img class="illust--2" src="images/fenneticthingie.svg" alt="illust 2">
+    </div>
+    <section class="team" id="team">
+      <div class="desc2">
+        <h3>Nos engagements envers la qualité et votre satisfactione</h3>
+        <p class="team-paragraph">Nous disposons d'une équipe de professionnels hautement qualifiés en développement de logiciels et technologies. Nous nous engageons à fournir des solutions numériques de haute qualité, livrées dans les délais impartis, et proposons également des services de marketing numérique, d'hébergement web et de maintenance pour assurer le bon fonctionnement et la sécurité de nos produits numériques.</p>
+      </div>
+      <div class="see-more">
+        <p class="see-fylo"><a href="https://www.yumpu.com/it/document/read/67947700/portfolio" target="_blank" rel="noopener">Voir notre portfolio</a></p>
+        <img src="images/icon-arrow.svg" alt="arrow">
+      </div>
+      <div class="quote">
+        <img src="images/icon-quotes.svg" alt="">
+        <p id="quote">Chez Fennetec, nous sommes passionnés par l'innovation et la technologie, et nous sommes fiers d'aider nos clients à atteindre leurs objectifs en offrant des solutions numériques sur mesure qui répondent à leurs besoins uniques.</p>
+        <div class="identity">
+          <img class="avatar" src="images/avatar-testimonial.jpg" alt="kyle burton">
+          <div class="name-profession">
+            <p class="name">Kyle Burton</p>
+            <p class="profession">Founder & CEO, Fennetec</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+    <!-- sign in section -->
+    <section class="sign-in" id="sign-in">
+      <div class="signin-desc">
+        <h3 class="get-early">Notre équipe de professionnels hautement qualifiés</h3>
+        <p class="sign-up">Notre équipe de plus de 8 professionnels hautement qualifiés travaille ensemble pour garantir le respect des délais et la qualité de nos produits. Nous sommes constamment formés aux dernières technologies pour rester à la pointe de l'industrie.</p>
+      </div>
+      <div class="form form2">
+        <div class="input-box">
+        <input id="signin-input" type="email" placeholder="Entrer votre email...">
+        <p class="error-message" id="signin-error-message">Please check your email</p>
+        </div>
+        <button onclick="getStartedForFree()"  id="signin-btn">Envoyer moi les nouveaux</button>
+      </div>
+    </section>
+  </main>
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+    <div>
+      <ul>
+          <li>
+            <a href="#"><img class="fylo" src="images/fennetec_white.png" alt="logo"></a>
+          </li>
+          <li>
+            <a href="#"><div class="contact"><img src="images/icon-phone.svg" alt="phone"><p>+213-645-15-23-32</p></div></a>
+          </li>
+          <li>
+            <a href="#"><div class="contact"><img src="images/icon-email.svg" alt="email"> <p>hellofennetec@fennetec.com</p></div></a>
+          </li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li><a href="#">À propos</a></li>
+        <li><a href="#">Métier</a></li>
+        <li><a href="#">Presse</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li><a href="#">Contactez nous</a></li>
+        <li><a href="#">Termes</a></li>
+        <li><a href="#">Termes de confidentialité</a></li>
+      </ul>
+    </div>
+    <div class="socials">
+      <a href="#"><i class="fa-brands fa-facebook-f" title="brand-link"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter" title="brand-link"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram" title="brand-link"></i></a>
+    </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
