@@ -417,6 +417,21 @@ footer a {
     fill: var(--accent-brightBlue);
 }
 
+/* Footer */
+.attribution {
+    position: absolute;
+    bottom: .8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    text-align: center;
+    color: white;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
 /*=========================================*/
 
 @media (min-width: 751px) {
