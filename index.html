@@ -1,312 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+			rel="stylesheet"
+		/>
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Frontend Mentor | Fylo landing page with two column layout</title>
-  </head>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+			crossorigin="anonymous"
+		/>
 
-  <body>
-    <main>
-      <h1 class="sr-only">Fylo landing page with two column layout</h1>
-      <header>
-        <svg
-          width="166"
-          height="49"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-        >
-          <defs>
-            <path id="a" d="M.014.03h93.96v48.29H.015z" />
-          </defs>
-          <g fill="none" fill-rule="evenodd">
-            <path
-              d="M0 14.13v.123l27.95 13.13L56 14.209v-.033L27.95 1 0 14.13zm10.077.062L27.95 5.795l17.877 8.397-17.877 8.396-17.874-8.396zM27.95 32.483L0 19.55v4.784l27.95 12.964L56 24.289v-4.784L27.95 32.483zm0 9.703L0 29.25v4.783L27.95 47 56 33.99v-4.784l-28.05 12.98z"
-              fill="#BDBAFA"
-            />
-            <g transform="translate(72)">
-              <mask id="b" fill="#fff">
-                <use xlink:href="#a" />
-              </mask>
-              <path
-                d="M87.56 24.152a8.1 8.1 0 0 0-2.161-5.573 7.259 7.259 0 0 0-2.34-1.673 6.864 6.864 0 0 0-2.85-.601c-1.01 0-1.961.2-2.852.601a7.257 7.257 0 0 0-2.34 1.673 8.102 8.102 0 0 0-2.16 5.574 8.102 8.102 0 0 0 2.16 5.573 7.257 7.257 0 0 0 2.34 1.672 6.864 6.864 0 0 0 2.851.602c1.01 0 1.96-.2 2.852-.602a7.259 7.259 0 0 0 2.339-1.672 8.1 8.1 0 0 0 2.16-5.574zm6.415 0c0 1.932-.357 3.723-1.07 5.373a13.098 13.098 0 0 1-2.94 4.28c-1.247 1.205-2.71 2.156-4.388 2.854-1.678.699-3.468 1.048-5.369 1.048-1.9 0-3.683-.349-5.346-1.048a13.863 13.863 0 0 1-4.366-2.876 13.351 13.351 0 0 1-2.94-4.302c-.713-1.65-1.07-3.426-1.07-5.329 0-1.873.364-3.634 1.092-5.284a13.92 13.92 0 0 1 2.962-4.325 13.671 13.671 0 0 1 4.367-2.898 13.552 13.552 0 0 1 5.301-1.048c1.901 0 3.69.35 5.369 1.048 1.678.698 3.14 1.65 4.388 2.854 1.248 1.204 2.228 2.638 2.94 4.302.713 1.665 1.07 3.449 1.07 5.351zM64.258 36.905a8.6 8.6 0 0 1-1.715.58c-.638.148-1.3.222-1.982.222a9.84 9.84 0 0 1-2.74-.379 6.003 6.003 0 0 1-2.295-1.226c-.653-.565-1.173-1.3-1.56-2.207-.385-.907-.578-2-.578-3.277V.029h6.549v29.474c0 1.07.215 1.806.646 2.207.43.401.943.602 1.537.602.742 0 1.455-.223 2.138-.669v5.262zM50.492 11.22L38.908 41.854c-.861 2.289-1.99 3.939-3.386 4.95-1.396 1.01-3.06 1.515-4.99 1.515-.297 0-.623-.022-.98-.066a7.352 7.352 0 0 1-1.025-.201l-2.138-5.975a8.486 8.486 0 0 0 1.56.557c.534.134 1.039.201 1.514.201 1.01 0 1.93-.23 2.762-.691.832-.46 1.47-1.315 1.916-2.564l.891-2.586-9.935-25.773h6.995l5.925 16.588 5.57-16.588h6.905zM23.538 7.342H6.786v8.294h16.529v5.618H6.785v15.784H.015V1.412h23.524v5.93z"
-                fill="#000"
-                mask="url(#b)"
-              />
-            </g>
-          </g>
-        </svg>
-
-        <nav>
-          <ul class="nav_links">
-            <li class="features"><a href="">Features</a></li>
-            <li class="team"><a href="">Team</a></li>
-            <li class="sign-up"><a href="">Sign In</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <section class="fylo-intro">
-        <img
-          src="images/illustration-1.svg"
-          alt="this is an illustration of 2 people putting all their files in one huge folder"
-          class="illustration-1"
-        />
-        <div class="get-started">
-          <h2>All your files in one secure location, accessible anywhere.</h2>
-
-          <p>
-            Fylo stores your most important files in one secure location. Access
-            them wherever you need, share and collaborate with friends, family,
-            and co-workers.
-          </p>
-
-          <form class="email">
-            <input
-              type="email"
-              placeholder="Enter your email..."
-              required
-              oninvalid="this.setCustomValidity('please check your email')"
-            />
-            <button type="submit">Get Started</button>
-          </form>
-        </div>
-      </section>
-
-      <picture>
-        <source
-          media="(min-width: 751px)"
-          srcset="images/bg-curve-desktop.svg"
-        />
-        <img
-          src="images/bg-curve-mobile.svg"
-          alt="curve-mobile"
-          id="bg-curve-mobile"
-        />
-      </picture>
-
-      <section class="productive">
-        <img
-          src="images/illustration-2.svg"
-          alt="this is an illustration of 3 people holding up speach bubbles"
-          class="illustration-2"
-        />
-        <div class="prod-desc">
-          <h2>Stay productive, wherever you are</h2>
-
-          <p>
-            Never let location be an issue when accessing your files. Fylo has
-            you covered for all of your file storage needs.
-          </p>
-
-          <br />
-
-          <p>
-            Securely share files and folders with friends, family and colleagues
-            for live collaboration. No email attachments required!
-          </p>
-
-          <br />
-
-          <div class="see-more">
-            <a href="">
-              See how Fylo works<svg
-                width="16"
-                height="16"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <defs>
-                  <circle id="b" cx="6" cy="6" r="6" />
-                  <filter
-                    x="-25%"
-                    y="-25%"
-                    width="150%"
-                    height="150%"
-                    filterUnits="objectBoundingBox"
-                    id="a"
-                  >
-                    <feOffset in="SourceAlpha" result="shadowOffsetOuter1" />
-                    <feGaussianBlur
-                      stdDeviation="1"
-                      in="shadowOffsetOuter1"
-                      result="shadowBlurOuter1"
-                    />
-                    <feColorMatrix
-                      values="0 0 0 0 0.239215686 0 0 0 0 0.62745098 0 0 0 0 0.560784314 0 0 0 0.793506567 0"
-                      in="shadowBlurOuter1"
-                    />
-                  </filter>
-                </defs>
-                <g fill="none" fill-rule="evenodd">
-                  <g transform="translate(2 2)">
-                    <use fill="#000" filter="url(#a)" xlink:href="#b" />
-                    <use fill="#3DA08F" xlink:href="#b" />
-                  </g>
-                  <path
-                    d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z"
-                    fill="#FFF"
-                  />
-                </g>
-              </svg>
-            </a>
-          </div>
-
-          <br />
-
-          <div class="testimonial">
-            <img src="images/icon-quotes.svg" alt="" />
-            <p>
-              Fylo has improved our team productivity by an order of magnitude.
-              Since making the switch our team has become a well-oiled
-              collaboration machine.
-            </p>
-
-            <div class="profile">
-              <img src="images/avatar-testimonial.jpg" alt="" />
-
-              <span>
-                <h3>Kyle Burton</h3>
-                <p>Founder & CEO, Huddle</p>
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="early-access">
-        <div class="ea-desc">
-          <h2>Get early access today</h2>
-
-          <p>
-            It only takes a minute to sign up and our free starter tier is
-            extremely generous. If you have any questions, our support team
-            would be happy to help you.
-          </p>
-        </div>
-
-        <form class="free-trial">
-          <input
-            type="email"
-            placeholder="email@example.com"
-            required
-            oninvalid="setCustomValidity('please check email')"
-          />
-          <button type="submit">Get Started For Free</button>
-        </form>
-      </section>
-
-      <footer>
-        <div class="fylo-footer">
-          <svg
-            width="166"
-            height="49"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <defs>
-              <path id="a" d="M.014.03h93.96v48.29H.015z" />
-            </defs>
-            <g fill="none" fill-rule="evenodd">
-              <path
-                d="M0 14.13v.123l27.95 13.13L56 14.209v-.033L27.95 1 0 14.13zm10.077.062L27.95 5.795l17.877 8.397-17.877 8.396-17.874-8.396zM27.95 32.483L0 19.55v4.784l27.95 12.964L56 24.289v-4.784L27.95 32.483zm0 9.703L0 29.25v4.783L27.95 47 56 33.99v-4.784l-28.05 12.98z"
-                fill="#BDBAFA"
-              />
-              <g transform="translate(72)">
-                <mask id="b" fill="#fff">
-                  <use xlink:href="#a" />
-                </mask>
-                <path
-                  d="M87.56 24.152a8.1 8.1 0 0 0-2.161-5.573 7.259 7.259 0 0 0-2.34-1.673 6.864 6.864 0 0 0-2.85-.601c-1.01 0-1.961.2-2.852.601a7.257 7.257 0 0 0-2.34 1.673 8.102 8.102 0 0 0-2.16 5.574 8.102 8.102 0 0 0 2.16 5.573 7.257 7.257 0 0 0 2.34 1.672 6.864 6.864 0 0 0 2.851.602c1.01 0 1.96-.2 2.852-.602a7.259 7.259 0 0 0 2.339-1.672 8.1 8.1 0 0 0 2.16-5.574zm6.415 0c0 1.932-.357 3.723-1.07 5.373a13.098 13.098 0 0 1-2.94 4.28c-1.247 1.205-2.71 2.156-4.388 2.854-1.678.699-3.468 1.048-5.369 1.048-1.9 0-3.683-.349-5.346-1.048a13.863 13.863 0 0 1-4.366-2.876 13.351 13.351 0 0 1-2.94-4.302c-.713-1.65-1.07-3.426-1.07-5.329 0-1.873.364-3.634 1.092-5.284a13.92 13.92 0 0 1 2.962-4.325 13.671 13.671 0 0 1 4.367-2.898 13.552 13.552 0 0 1 5.301-1.048c1.901 0 3.69.35 5.369 1.048 1.678.698 3.14 1.65 4.388 2.854 1.248 1.204 2.228 2.638 2.94 4.302.713 1.665 1.07 3.449 1.07 5.351zM64.258 36.905a8.6 8.6 0 0 1-1.715.58c-.638.148-1.3.222-1.982.222a9.84 9.84 0 0 1-2.74-.379 6.003 6.003 0 0 1-2.295-1.226c-.653-.565-1.173-1.3-1.56-2.207-.385-.907-.578-2-.578-3.277V.029h6.549v29.474c0 1.07.215 1.806.646 2.207.43.401.943.602 1.537.602.742 0 1.455-.223 2.138-.669v5.262zM50.492 11.22L38.908 41.854c-.861 2.289-1.99 3.939-3.386 4.95-1.396 1.01-3.06 1.515-4.99 1.515-.297 0-.623-.022-.98-.066a7.352 7.352 0 0 1-1.025-.201l-2.138-5.975a8.486 8.486 0 0 0 1.56.557c.534.134 1.039.201 1.514.201 1.01 0 1.93-.23 2.762-.691.832-.46 1.47-1.315 1.916-2.564l.891-2.586-9.935-25.773h6.995l5.925 16.588 5.57-16.588h6.905zM23.538 7.342H6.786v8.294h16.529v5.618H6.785v15.784H.015V1.412h23.524v5.93z"
-                  fill="#000"
-                  mask="url(#b)"
-                />
-              </g>
-            </g>
-          </svg>
-
-          <div class="contact-info">
-            <p>
-              <img src="images/icon-phone.svg" alt="" />
-              Phone: +1-543-123-4567
-            </p>
-            <p>
-              <img src="images/icon-email.svg" alt="" />
-              example@fylo.com
-            </p>
-          </div>
-        </div>
-
-        <nav class="footer-nav">
-          <ul class="info-list">
-            <li id="abous-us"><a href="">About Us</a></li>
-            <li id="jobs"><a href="">Jobs</a></li>
-            <li id="press"><a href="">Press</a></li>
-            <li id="blog"><a href="">Blog</a></li>
-          </ul>
-          <ul class="contact-list">
-            <li id="contact-us"><a href="">Contact Us</a></li>
-            <li id="terms"><a href="">Terms</a></li>
-            <li id="privacy"><a href="">Privacy</a></li>
-          </ul>
-        </nav>
-
-        <div class="social-media">
-          <a aria-label="facebook" href=""
-            ><svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M25 50c13.807 0 25-11.193 25-25S38.807 0 25 0 0 11.193 0 25s11.193 25 25 25Zm0-3c12.15 0 22-9.85 22-22S37.15 3 25 3 3 12.85 3 25s9.85 22 22 22Zm1.815-11V24.999h3.254l.431-3.791h-3.685l.005-1.898c0-.989.1-1.518 1.623-1.518h2.034V14h-3.255c-3.91 0-5.285 1.84-5.285 4.932v2.276H19.5v3.791h2.437V36h4.878Zm0 0"
-                fill="#f6f6fe"
-                fill-rule="evenodd"
-                class="fill-000000"
-              ></path></svg
-          ></a>
-          <a class="twitter" aria-label="twitter" href=""
-            ><svg
-              viewBox="0 0 512 512"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g fill="#f6f6fe" class="fill-469ae9">
-                <path
-                  d="M415 177.721c-10.697 4.755-22.209 7.962-34.288 9.397 12.333-7.383 21.79-19.079 26.25-33.03a119.51 119.51 0 0 1-37.909 14.495c-10.886-11.6-26.403-18.854-43.573-18.854-32.964 0-59.693 26.727-59.693 59.699 0 4.672.526 9.226 1.548 13.603-49.616-2.493-93.609-26.255-123.053-62.374-5.139 8.812-8.081 19.066-8.081 30.017 0 20.709 10.538 38.984 26.556 49.687-9.781-.313-18.99-3-27.041-7.472-.006.248-.006.502-.006.755 0 28.919 20.579 53.041 47.891 58.535a60 60 0 0 1-15.729 2.092c-3.851 0-7.591-.373-11.235-1.075 7.602 23.715 29.646 40.981 55.765 41.458-20.431 16.013-46.166 25.559-74.14 25.559-4.814 0-9.569-.284-14.241-.839 26.426 16.946 57.802 26.822 91.512 26.822 109.811 0 169.852-90.963 169.852-169.852 0-2.588-.053-5.168-.165-7.731 11.659-8.4 21.782-18.919 29.78-30.892z"
-                ></path>
-                <path
-                  d="M254.5 16.5c-131.996 0-239 107.004-239 239s107.004 239 239 239 239-107.004 239-239-107.004-239-239-239zm158.392 397.392C370.584 456.2 314.333 479.5 254.5 479.5s-116.084-23.3-158.392-65.608C53.8 371.584 30.5 315.333 30.5 255.5S53.8 139.416 96.108 97.108C138.416 54.8 194.667 31.5 254.5 31.5s116.084 23.3 158.392 65.608C455.2 139.416 478.5 195.667 478.5 255.5s-23.3 116.084-65.608 158.392z"
-                ></path>
-              </g></svg
-          ></a>
-          <a aria-label="instagram" href=""
-            ><svg
-              viewBox="0 0 512 512"
-              xml:space="preserve"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g fill="#f6f6fe" class="fill-964dd4">
-                <path
-                  d="M256.7 507.9C120 507.5 7.8 396.4 8.5 255.6 9.1 116.5 121.2 4.7 260 6.2c135.2 1.5 246.6 112.2 245.5 252.9-1 138.4-112 248.6-248.8 248.8zm.4-482c-124.2-.4-227.7 100.8-229 228.6-1.3 130.7 103 232.5 226.4 233.8 126.1 1.3 230.7-100.7 231.4-229.1.6-129.7-101.6-233.3-228.8-233.3z"
-                ></path>
-                <path
-                  d="M413.1 259.9c0 22-.6 44 .1 66 1.4 39-24.7 71.2-58.6 83.8-11.3 4.2-23 6.5-35.1 6.5-41.8-.1-83.6.4-125.5-.2-35.1-.5-62.9-15.2-81.8-45.3-7.4-11.8-11.2-24.9-11.3-38.8-.2-47.8-.6-95.6.1-143.5.4-30.8 16.1-53.5 41.6-69.8 16.3-10.4 34.4-14.8 53.6-14.8 41.2 0 82.3-.3 123.5.1 32.4.4 59.1 13.2 78.4 39.7 9.8 13.5 15 28.8 15 45.7v70.6zm-289.1-.1v69.5c0 9 1.9 17.5 6.1 25.5 13.8 26 36.5 37.7 64.9 38.1 40.6.6 81.3.1 121.9.2 10.9 0 21.5-1.9 31.7-5.9 25.4-10 41.4-33.1 41.4-60.3V191.5c0-12.9-3.6-24.6-11.4-35-14.9-19.8-35.3-29-59.6-29.2-41.3-.4-82.6-.2-123.9-.1-9.2 0-18.1 1.8-26.8 4.9-25.4 9.2-45.4 32.7-44.4 63.3.7 21.4.1 42.9.1 64.4z"
-                ></path>
-                <path
-                  d="M257.3 182c40.7 0 73.7 32.5 73.6 72.6-.1 39.7-33.2 72.3-73.5 72.3-40.7 0-73.4-32.4-73.4-72.7 0-40 32.7-72.2 73.3-72.2zm50 72.3c-.1-27.1-22.5-49.1-50.1-49.1-27.3 0-50.1 22.4-50.1 49.3 0 27 22.5 48.9 50.3 48.9 27.9-.1 50-21.8 49.9-49.1zM323.9 176.1c-.1-9.1 6.7-16.2 15.3-16.2 8.5 0 15.7 7.4 15.6 16.1 0 8.8-7.3 16.1-15.8 16-8.4-.1-15.1-7.1-15.1-15.9z"
-                ></path>
-              </g></svg
-          ></a>
-        </div>
-      </footer>
-    </main>
-    <footer class="attribution">
+		<link rel="stylesheet" href="style.css" />
+		<title>Fylo Landing Page</title>
+	</head>
+	<body>
+		<main>
+			<div class="container">
+				<nav class="navbar">
+					<header class="header-logo">
+						<img src="images/logo.svg" alt="fylo-logo" />
+					</header>
+					<ul>
+						<li>Features</li>
+						<li>Team</li>
+						<li>Sign In</li>
+					</ul>
+				</nav>
+				<section class="showcase">
+					<div class="wrapper">
+						<div class="box">
+							<h1 class="showcase-title">
+								All your files in one secure location, accesible anywhere.
+							</h1>
+							<p class="lead">
+								Fylo stores your most important files in one secure location.
+								Access them wherever you need, share and collaborate with
+								friends, family, and co-workers.
+							</p>
+							<form action="#" class="showcase-form">
+								<input
+									type="email"
+									name="email"
+									class="showcase-input"
+									placeholder="Enter your email..."
+									required
+								/>
+								<button class="showcase-btn">Get Started</button>
+							</form>
+						</div>
+						<div>
+							<img
+								src="images/illustration-1.svg"
+								class="showcase-img-1"
+								alt="Illustration"
+							/>
+						</div>
+					</div>
+				</section>
+			</div>
+			<img
+				src="images/bg-curve-desktop.svg"
+				alt="curve background"
+				class="bg-curve"
+			/>
+			<section class="testimonial">
+				<div class="showcase-2">
+					<div>
+						<h1 class="showcase-title">Stay productive, wherever you are</h1>
+						<p class="lead">
+							Never let location be an issue when accessing your files. Fylo has
+							you covered for all of your file storage needs.
+						</p>
+						<p class="lead">
+							Securely share files and folders with friends, family and
+							colleagues for live collaboration. No email attachments required!
+						</p>
+						<a href="#" class="fylo-link"
+							>See how Fylo works<img
+								src="images/icon-arrow.svg"
+								alt=""
+								class="fylo-icon"
+						/></a>
+						<div class="card-container">
+							<img src="images/icon-quotes.svg" alt="quote-icon" />
+							<p class="testimonial-word">
+								Fylo has improved our team productivity by an order of
+								magnitude. Since making the switch our team has become a
+								well-oiled collaboration machine.
+							</p>
+							<div class="card">
+								<img
+									src="images/avatar-testimonial.jpg"
+									class="card-img"
+									alt="guy"
+								/>
+								<div class="card-description">
+									<h1 class="card-name">Kyle Burton</h1>
+									<p class="card-position">Founder & CEO, Huddle</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<img
+							src="images/illustration-2.svg"
+							alt=""
+							class="showcase-img-2"
+						/>
+					</div>
+				</div>
+			</section>
+			<section class="early-access">
+				<div class="access-box-1">
+					<div class="access-description">
+						<h2 class="access-title">Get early access today</h2>
+						<p class="access-lead">
+							It only takes a minute to sign up and our free starter tier is
+							extremely generous. If you have any questions, our support team
+							would be happy to help you.
+						</p>
+					</div>
+					<form class="access-box-2">
+						<input
+							type="email"
+							placeholder="email@example.com"
+							class="access-input"
+							required
+						/>
+						<button class="access-btn">Get Started For Free</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<!-- Footer -->
+		<footer>
+			<div class="footer-box">
+				<div class="contacts">
+					<img src="images/logo-white.svg" class="logo-white" alt="" />
+					<div class="phone-icon">
+						<img src="images/icon-phone.svg" class="icon" alt="" />
+						<p>Phone: +1-543-123-4567</p>
+					</div>
+					<div class="email-icon">
+						<img src="images/icon-email.svg" class="icon" alt="" />
+						<p>example@fylo.com</p>
+					</div>
+				</div>
+				<div class="footer-link-1">
+					<a href="#">About Us</a>
+					<a href="#">Jobs</a>
+					<a href="#">Press</a>
+					<a href="#">Blog</a>
+				</div>
+				<div class="footer-link-2">
+					<a href="#">Contact Us</a>
+					<a href="#">Terms</a>
+					<a href="#">Privacy</a>
+				</div>
+				<div class="social-link">
+					<i class="fab fa-facebook-f"></i>
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-instagram"></i>
+				</div>
+			</div>
+		</footer>
+    <div class="attribution">
       Coded by <a href="https://github.com/SartHak-0-Sach" target="_blank">Sarthak Sachdev</a>.
-    </footer>
-  </body>
+    </div>
+	</body>
 </html>
